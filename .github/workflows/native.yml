@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - develop
+      - aarch64-support
   pull_request:
   release:
     types: [published]
