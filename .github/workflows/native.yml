@@ -33,7 +33,8 @@ jobs:
       - name: Checkout sbt/sbt
         uses: actions/checkout@v3
         with:
-          repository: sbt/sbt
+          repository: mkurz/sbt
+          ref: sbtn-aarch64
       - name: Setup JDK
         uses: actions/setup-java@v3
         with:
