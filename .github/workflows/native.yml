@@ -51,8 +51,8 @@ jobs:
           echo $(pwd)
           sbt clean nativeImage
       - name: Build Linux aarch64
-        uses: uraimo/run-on-arch-action@v2.5.0
         if: ${{ matrix.uploaded_filename == 'sbtn-aarch64-pc-linux' }}
+        uses: uraimo/run-on-arch-action@v2.5.0
         with:
           arch: aarch64
           distro: ubuntu22.04
