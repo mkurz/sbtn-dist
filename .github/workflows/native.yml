@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macOS-latest, ubuntu-latest, windows-2019]
+        os: [macOS-latest, ubuntu-latest, ubuntu-22.04, windows-2019]
         include:
           - os: macOS-latest
             uploaded_filename: sbtn-x86_64-apple-darwin
