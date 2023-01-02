@@ -14,12 +14,14 @@ jobs:
       matrix:
         os: [macOS-latest, ubuntu-latest, windows-2019]
         include:
-          # Replace "example" with the name your binary
           - os: macOS-latest
             uploaded_filename: sbtn-x86_64-apple-darwin
             local_path: client/target/bin/sbtn
           - os: ubuntu-latest
             uploaded_filename: sbtn-x86_64-pc-linux
+            local_path: client/target/bin/sbtn
+          - os: ubuntu-latest
+            uploaded_filename: sbtn-aarch64-pc-linux
             local_path: client/target/bin/sbtn
           - os: windows-2019
             uploaded_filename: sbtn-x86_64-pc-win32.exe
