@@ -60,9 +60,6 @@ jobs:
           # Speeds up builds per the run-on-arch-action README
           githubToken: ${{ github.token }}
 
-          dockerRunArgs: |
-            --volume "${PWD}:/code"
-
           # The shell to run commands with in the container
           shell: /bin/bash
 
@@ -78,7 +75,6 @@ jobs:
             curl -Ls https://scala.jfrog.io/artifactory/debian/sbt-1.8.0.deb -o sbt-1.8.0.deb
             apt install -y ./sbt-1.8.0.deb
           run: |
-            cd /code
             sbt clean nativeImage
       - uses: actions/upload-artifact@v3
         with:
