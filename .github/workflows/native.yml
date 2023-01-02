@@ -21,7 +21,7 @@ jobs:
           - os: ubuntu-latest
             uploaded_filename: sbtn-x86_64-pc-linux
             local_path: client/target/bin/sbtn
-          - os: ubuntu-latest
+          - os: ubuntu-22.04
             uploaded_filename: sbtn-aarch64-pc-linux
             local_path: client/target/bin/sbtn
           - os: windows-2019
