@@ -77,6 +77,7 @@ jobs:
             curl -Ls https://scala.jfrog.io/artifactory/debian/sbt-1.8.0.deb -o sbt-1.8.0.deb
             apt install -y ./sbt-1.8.0.deb
           run: |
+            cd /code
             sbt clean nativeImage
       - uses: actions/upload-artifact@v3
         with:
